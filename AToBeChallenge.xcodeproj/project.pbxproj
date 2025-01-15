@@ -11,9 +11,12 @@
 		3D3C3CB62D37A6A4000364CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C3CB52D37A6A4000364CE /* SceneDelegate.swift */; };
 		3D3C3CB82D37A6A4000364CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C3CB72D37A6A4000364CE /* ViewController.swift */; };
 		3D3C3CBB2D37A6A4000364CE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3D3C3CBA2D37A6A4000364CE /* Base */; };
-		3D3C3CBE2D37A6A4000364CE /* AToBeChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C3CBC2D37A6A4000364CE /* AToBeChallenge.xcdatamodeld */; };
 		3D3C3CC02D37A6A7000364CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3C3CBF2D37A6A7000364CE /* Assets.xcassets */; };
 		3D3C3CC32D37A6A7000364CE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3D3C3CC22D37A6A7000364CE /* Base */; };
+		3D3C3CD12D37AA6D000364CE /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C3CD02D37AA6D000364CE /* Product.swift */; };
+		3D3C3CD32D37AB03000364CE /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C3CD22D37AB03000364CE /* CustomTableViewCell.swift */; };
+		3D3C3CD52D37AD6F000364CE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C3CD42D37AD6F000364CE /* Extensions.swift */; };
+		3D3C3CED2D381A33000364CE /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C3CEC2D381A33000364CE /* DescriptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +25,13 @@
 		3D3C3CB52D37A6A4000364CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3D3C3CB72D37A6A4000364CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D3C3CBA2D37A6A4000364CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3D3C3CBD2D37A6A4000364CE /* AToBeChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AToBeChallenge.xcdatamodel; sourceTree = "<group>"; };
 		3D3C3CBF2D37A6A7000364CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D3C3CC22D37A6A7000364CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D3C3CC42D37A6A7000364CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D3C3CD02D37AA6D000364CE /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		3D3C3CD22D37AB03000364CE /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		3D3C3CD42D37AD6F000364CE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3D3C3CEC2D381A33000364CE /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,51 @@
 		3D3C3CB22D37A6A4000364CE /* AToBeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				3D3C3CCD2D37A78D000364CE /* Helpers */,
+				3D3C3CCC2D37A740000364CE /* View */,
+				3D3C3CCB2D37A739000364CE /* Model */,
+				3D3C3CCA2D37A726000364CE /* Controller */,
 				3D3C3CB32D37A6A4000364CE /* AppDelegate.swift */,
 				3D3C3CB52D37A6A4000364CE /* SceneDelegate.swift */,
-				3D3C3CB72D37A6A4000364CE /* ViewController.swift */,
 				3D3C3CB92D37A6A4000364CE /* Main.storyboard */,
 				3D3C3CBF2D37A6A7000364CE /* Assets.xcassets */,
 				3D3C3CC12D37A6A7000364CE /* LaunchScreen.storyboard */,
 				3D3C3CC42D37A6A7000364CE /* Info.plist */,
-				3D3C3CBC2D37A6A4000364CE /* AToBeChallenge.xcdatamodeld */,
 			);
 			path = AToBeChallenge;
+			sourceTree = "<group>";
+		};
+		3D3C3CCA2D37A726000364CE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D3C3CB72D37A6A4000364CE /* ViewController.swift */,
+				3D3C3CEC2D381A33000364CE /* DescriptionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D3C3CCB2D37A739000364CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D3C3CD02D37AA6D000364CE /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D3C3CCC2D37A740000364CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D3C3CD22D37AB03000364CE /* CustomTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D3C3CCD2D37A78D000364CE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3D3C3CD42D37AD6F000364CE /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +183,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D3C3CB82D37A6A4000364CE /* ViewController.swift in Sources */,
-				3D3C3CBE2D37A6A4000364CE /* AToBeChallenge.xcdatamodeld in Sources */,
+				3D3C3CED2D381A33000364CE /* DescriptionViewController.swift in Sources */,
+				3D3C3CD32D37AB03000364CE /* CustomTableViewCell.swift in Sources */,
 				3D3C3CB42D37A6A4000364CE /* AppDelegate.swift in Sources */,
 				3D3C3CB62D37A6A4000364CE /* SceneDelegate.swift in Sources */,
+				3D3C3CD12D37AA6D000364CE /* Product.swift in Sources */,
+				3D3C3CD52D37AD6F000364CE /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,19 +411,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		3D3C3CBC2D37A6A4000364CE /* AToBeChallenge.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3D3C3CBD2D37A6A4000364CE /* AToBeChallenge.xcdatamodel */,
-			);
-			currentVersion = 3D3C3CBD2D37A6A4000364CE /* AToBeChallenge.xcdatamodel */;
-			path = AToBeChallenge.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 3D3C3CA82D37A6A4000364CE /* Project object */;
 }
