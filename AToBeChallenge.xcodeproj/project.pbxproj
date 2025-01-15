@@ -17,6 +17,7 @@
 		3D3C3CD32D37AB03000364CE /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C3CD22D37AB03000364CE /* CustomTableViewCell.swift */; };
 		3D3C3CD52D37AD6F000364CE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C3CD42D37AD6F000364CE /* Extensions.swift */; };
 		3D3C3CED2D381A33000364CE /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C3CEC2D381A33000364CE /* DescriptionViewController.swift */; };
+		3D3C3CEF2D383255000364CE /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C3CEE2D383255000364CE /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3D3C3CD22D37AB03000364CE /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		3D3C3CD42D37AD6F000364CE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3D3C3CEC2D381A33000364CE /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		3D3C3CEE2D383255000364CE /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,7 @@
 		3D3C3CB22D37A6A4000364CE /* AToBeChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				3D3C3CCD2D37A78D000364CE /* Helpers */,
+				3D3C3CCD2D37A78D000364CE /* Communs */,
 				3D3C3CCC2D37A740000364CE /* View */,
 				3D3C3CCB2D37A739000364CE /* Model */,
 				3D3C3CCA2D37A726000364CE /* Controller */,
@@ -103,12 +105,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		3D3C3CCD2D37A78D000364CE /* Helpers */ = {
+		3D3C3CCD2D37A78D000364CE /* Communs */ = {
 			isa = PBXGroup;
 			children = (
 				3D3C3CD42D37AD6F000364CE /* Extensions.swift */,
+				3D3C3CEE2D383255000364CE /* Helpers.swift */,
 			);
-			path = Helpers;
+			path = Communs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +188,7 @@
 				3D3C3CB82D37A6A4000364CE /* ViewController.swift in Sources */,
 				3D3C3CED2D381A33000364CE /* DescriptionViewController.swift in Sources */,
 				3D3C3CD32D37AB03000364CE /* CustomTableViewCell.swift in Sources */,
+				3D3C3CEF2D383255000364CE /* Helpers.swift in Sources */,
 				3D3C3CB42D37A6A4000364CE /* AppDelegate.swift in Sources */,
 				3D3C3CB62D37A6A4000364CE /* SceneDelegate.swift in Sources */,
 				3D3C3CD12D37AA6D000364CE /* Product.swift in Sources */,

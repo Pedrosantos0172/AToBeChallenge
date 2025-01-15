@@ -55,3 +55,15 @@ extension UserDefaults {
         return UserDefaults.standard.object(forKey: key) != nil
     }
 }
+
+extension UIImageView {
+    func load(url: URL) {
+        URLSession.shared.dataTask(with: url) { data, _, _ in
+            if let data = data {
+                DispatchQueue.main.async {
+                    self.image = UIImage(data: data)
+                }
+            }
+        }.resume()
+    }
+}

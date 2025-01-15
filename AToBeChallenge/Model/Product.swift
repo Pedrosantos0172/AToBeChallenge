@@ -17,6 +17,7 @@ struct Product: Codable {
     let stock: Int
     let thumbnail: String
     let images: [String]
+    var imageData: Data?
 }
 
 struct ProductsResponse: Codable {

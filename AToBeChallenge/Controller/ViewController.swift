@@ -34,6 +34,7 @@ class ViewController: UIViewController {
             }else{
                 fetchProducts()
             }
+            
         }
         
     }
@@ -104,26 +105,12 @@ extension ViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         let product = products[indexPath.row]
-        
+    
         // Check rating to select image from the array
-        var selectedImageURL: String?
-        if product.rating < 3 {
-            selectedImageURL = product.images.first
-        }else if product.rating >= 3 && product.rating <= 4 {
-            selectedImageURL = product.images.count > 1 ? product.images[1] : product.images.first
-        }else {
-            selectedImageURL = product.images.last
-            
-        }
+        let selectedImageURL: String? = Helpers.shared.checkRating(product: product)
       
         if let urlString = selectedImageURL, let url = URL(string: urlString) {
-            // Fetch the appropriate image asynchronously
-            URLSession.shared.dataTask(with: url) { data, _, _ in
-                guard let data = data else { return }
-                DispatchQueue.main.async {
-                    cell.iconImageView.image = UIImage(data: data)
-                }
-            }.resume()
+            cell.iconImageView.load(url: url)
         }
         
         cell.titleLabel.text = "\(product.title)"
